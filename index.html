@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEE THREE LEARNING ACADEMY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Libertinus', sans-serif; }
+    h1, h2, h3 { font-family: 'Libertinus', serif; }
+    .animated-gradient {
+      background: linear-gradient(270deg, #fef9c3, hwb(69 55% 2%), hsl(64, 48%, 67%), #fef9c3);
+      background-size: 800% 800%;
+      animation: gradientMove 18s ease infinite;
+    }
+    @keyframes gradientMove {
+      0% {background-position:0% 50%}
+      50% {background-position:100% 50%}
+      100% {background-position:0% 50%}
+    }
+    .card-hover:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(106,90,205,0.15);
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      z-index: 100;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background: #128C7E;
+    }
+    /* Responsive nav overlay for mobile */
+    #nav-menu.active {
+      display: flex !important;
+      flex-direction: column;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: 100vw;
+      background: linear-gradient(90deg, #fef9c3 60%, #00BFFF 100%);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+      padding: 2rem 0;
+      z-index: 99;
+    }
+  </style>
+</head>
+<body class="bg-[#FFFDE7] text-gray-900 scroll-smooth">
+
+<!-- Navbar -->
+ 
+<header class="bg-[#FDE68A] text-gray-900 sticky top-0 z-50 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <img src="DTlogo.png" alt="Dee Three Logo" class="w-14 h-14 object-contain" />
+    <h1 class="text-2xl md:text-3xl font-bold tracking-wide drop-shadow">DEE THREE LEARNING ACADEMY</h1>
+    <button id="nav-toggle" class="md:hidden text-[#6A5ACD] text-3xl focus:outline-none transition hover:scale-110">&#9776;</button>
+    <nav id="nav-menu" class="space-y-2 md:space-x-4 md:flex md:items-center md:space-y-0 hidden">
+      <a href="#about" class="block md:inline hover:underline transition hover:text-[#6A5ACD]">About</a>
+      <a href="#programmes" class="block md:inline hover:underline transition hover:text-[#6A5ACD]">Programmes</a>
+      <a href="#vision" class="block md:inline hover:underline transition hover:text-[#6A5ACD]">Vision</a>
+      <a href="#mission" class="block md:inline hover:underline transition hover:text-[#6A5ACD]">Mission</a>
+      <a href="#contact" class="block md:inline hover:underline transition hover:text-[#6A5ACD]">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="animated-gradient bg-white text-gray-900 py-24 text-center relative overflow-hidden">
+  <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
+    <h2 class="text-5xl md:text-5xl font-bold mb-6 drop-shadow-lg">Cultivating Your Child's True Self</h2>
+     <p class="text-lg italic text-black-700 mb-6">"We Learn And Grow Together"</p>
+    <p class="text-xl md:text-2xl mb-8">A holistic space for learning, languages, and arts for young minds.</p>
+    <a href="#contact" class="inline-block bg-[#000000] text-white px-8 py-3 rounded-full shadow-lg hover:bg-[#6CA0DC] transition font-semibold text-lg">Enroll Now</a>
+  </div>
+  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Kids" class="absolute right-8 bottom-0 w-32 opacity-30 hidden md:block animate-bounce" />
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-16 bg-[#E6E6FA]">
+  <div class="max-w-5xl mx-auto px-4" data-aos="fade-right">
+    <h2 class="text-3xl font-semibold mb-6 text-black flex items-center gap-2">About Us</h2>
+    <img src="brochur.png" alt="Kids" class="w-200 mb-4 mx-auto md:mx-0" />
+    <p class="text-lg leading-relaxed">Dee Three Learning Academy focuses on <span class="font-bold text-[#00BFFF]">personalized</span>, <span class="font-bold text-[#6A5ACD]">creative</span>, and <span class="font-bold text-[#00BFFF]">meaningful</span> education experiences. We blend academic tutoring, global languages, and artistic development in a nurturing environment tailored for primary school children.</p>
+  </div>
+</section>
+
+<!-- Programmes Section -->
+<section id="programmes" class="py-16 bg-[#FFF9C4]">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-semibold text-[#6A5ACD] mb-8 text-center" data-aos="zoom-in">Our Programmes</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-[#FFFBEB] rounded-xl shadow-lg p-8 card-hover transition duration-300">
+        <img src="zumba.jpg" class="w-200 mx-auto mb-4" alt="Artistic" />
+        <h3 class="text-2xl font-semibold text-center mb-2 text-[#6A5ACD]">Artistic Development</h3>
+        <p class="text-center text-gray-700">From Phonics to Drawing, Zumba to Bharatanatyam, nurturing every child's creativity.</p>
+      </div>
+      <div class="bg-[#FFFBEB] rounded-xl shadow-lg p-8 card-hover transition duration-300">
+         <img src="writing.png" class="w-200 mx-auto mb-4 " alt="Languages" />
+        <h3 class="text-2xl font-semibold text-center mb-2 text-[#00BFFF]">Global Language Classes</h3>
+        <p class="text-center text-gray-700">Spoken English, Hindi, Tamil, and Arabic lessons with fun and interaction.</p>
+      </div>
+      <div class="bg-[#FFFBEB] rounded-xl shadow-lg p-8 card-hover transition duration-300">
+         <img src="phonics.png" class="w-200 mx-auto mb-4" alt="Academic" />
+        <h3 class="text-2xl font-semibold text-center mb-2 text-[#6A5ACD]">Academic Support</h3>
+        <p class="text-center text-gray-700">Home tuition designed for primary school learners, blending support and encouragement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vision & Mission -->
+<section id="vision" class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-4 bg-white rounded-xl shadow-lg p-8 card-hover transition" data-aos="fade-up" data-aos-delay="200">
+    <h2 class="text-3xl font-semibold text-[#6A5ACD] mb-6 flex items-center gap-2">Vision</h2>
+    <p class="text-lg leading-relaxed">We envision empowering students to become thoughtful, creative, and self-assured individuals, fully equipped to contribute positively to their communities. We are committed to fostering a nurturing environment where students can truly uncover and develop their true potential.</p>
+  </div>
+</section>
+
+<section id="mission" class="py-16 bg-[#E6E6FA]">
+  <div class="max-w-5xl mx-auto px-4 bg-white rounded-xl shadow-lg p-8 card-hover transition" data-aos="fade-up" data-aos-delay="200">
+    <h2 class="text-3xl font-semibold text-[#00BFFF] mb-6 flex items-center gap-2">Mission</h2>
+    <p class="text-lg leading-relaxed">To deliver exceptional educational experiences, developing critical thinking, and rigorously cultivate the unique talents and abilities of every student. We are dedicated to establishing a supportive and inclusive learning community that motivates students to pursue excellence, have meaningful connections, and bring positive change.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-[#FFFDE7]">
+  <div class="max-w-5xl mx-auto px-4" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold text-[#6A5ACD] mb-6 flex items-center gap-2">Contact Us</h2>
+    <form id="contact-form" class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white rounded-xl shadow-lg p-8">
+      <input type="text" name="name" placeholder="Your Name" class="border p-3 rounded focus:ring-2 focus:ring-[#6A5ACD] transition" required />
+      <input type="email" name="email" placeholder="Your Email" class="border p-3 rounded focus:ring-2 focus:ring-[#00BFFF] transition" required />
+      <textarea name="message" placeholder="Your Message" class="border p-3 rounded md:col-span-2 focus:ring-2 focus:ring-[#6A5ACD] transition" rows="4" required></textarea>
+      <button type="submit" class="bg-gradient-to-r from-[#6A5ACD] to-[#00BFFF] text-white px-6 py-2 rounded hover:opacity-90 md:col-span-2 font-semibold shadow-lg transition">Send Message</button>
+    </form>
+    <p id="result" class="text-green-600 mt-4"></p>
+    <div class="mt-8 text-lg">
+  <p>
+    <strong>Phone:</strong>
+    <a href="tel:+919791534960" class="text-[#00BFFF] underline">9791534960</a>
+  </p>
+  <p>
+    <strong>Instagram:</strong>
+    <a class="text-[#00BFFF] underline" href="https://www.instagram.com/dee_three_the_learning_academy" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="inline-block w-6 h-6 align-middle mr-2" />
+      @dee_three_the_learning_academy
+    </a>
+  </p>
+  <p>
+    <strong>Facebook:</strong>
+    <a class="text-[#00BFFF] underline" href="https://www.facebook.com/deethreethelearningacademy" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="inline-block w-6 h-6 align-middle mr-2" />
+      Dee Three Learning on Facebook
+    </a>
+  </p>
+</div>
+
+    <div class="mt-10">
+      <iframe src="https://maps.google.com/maps?q=chennai&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" class="rounded-xl shadow-lg" style="border:0;" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/+919791534960" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-8 h-8" />
+</a>
+
+<!-- Footer -->
+<footer class="bg-[#FDE68A] text-black text-center py-6 mt-12">
+  <p>© 2025 Dee Three Learning Academy. All rights reserved.</p>
+  <div class="mt-2 text-sm">
+    <span>Made with <span class="text-black">🖤</span> in Chennai</span>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Responsive nav toggle
+  document.getElementById("nav-toggle").addEventListener("click", function () {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+    menu.classList.toggle("hidden");
+  });
+
+  (function () {
+    emailjs.init("c0TW0G2i-lE5vAYdg");
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    emailjs.sendForm("service_qirba3a", "template_m89k6sg", this)
+      .then(function () {
+        document.getElementById("result").innerText = "Message sent successfully!";
+        document.getElementById("contact-form").reset();
+      }, function (error) {
+        document.getElementById("result").innerText = "Failed to send message. Please try again.";
+      });
+  });
+</script>
+
+</body>
+</html> 
